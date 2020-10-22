@@ -1,0 +1,34 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.logo-wrapper {
+  font-size: 0;
+  line-height: 1;
+  margin :0 ;
+}
+
+.as-l {
+align-self: flex-start;
+}
+
+section.img {
+  width:100%;
+}
+
+
+.footer-title {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*CSS Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
