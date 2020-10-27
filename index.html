@@ -1,144 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <link rel="stylesheet" href="simple-grid.min.css">
-    <link rel="stylesheet" href="main.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-    <title>Frontend Mentor | Insure landing page</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="simple-grid.min.css">
+  <link rel="stylesheet" href="normalize.css">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Karla:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
 
-  </head>
-  <body>
-    <div class="container">
-      <header>
-      <h1 class="logo-wrapper">
-        <a href="#" class="as-l"
-          ><img src="/images/logo.svg" alt="Logo"
-        /></a></h1>
-        
-        <nav class="main-nav">
-        <a class="" href="#">How we work</a>
-        <a class="" href="#">Blog</a>
-        <a class="" href="#">Account</a>
-        <a class="" href="#">View plans</a>
-      </nav>
-    </header>
+  <title>Frontend Mentor | Insure landing page</title>
 
-      <section class="row">
-          <div class="col-6">
+</head>
+
+<body>
+  <header class="flex-row align-center container">
+    <h1 class="logo-wrapper">
+      <a href="#" class=""><img src="/images/logo.svg" alt="Logo" /></a></h1>
+
+    <nav class="main-nav">
+
+      <ul id="desktopNav" class="desktop">
+      <li><a class="" href="#">How we work</a></li>
+      <li><a class="" href="#">Blog</a></li>
+      <li><a class="" href="#">Account</a></li>
+      <li><a class="cta purple" href="#">View plans</a></li>
+    </ul>
+
+    <a class="burger mobile">
+      <img id="burgerSVG" src="/images/icon-hamburger.svg" alt="" srcset="">
+      <img id="closeSVG" class="hidden" src="/images/icon-close.svg" alt="" srcset="">
+    </a>
+    <ul id="mobileNav" class="mobile hidden">
+      <li><a class="" href="#">How we work</a></li>
+      <li><a class="" href="#">Blog</a></li>
+      <li><a class="" href="#">Account</a></li>
+      <li><a class="cta white" href="#">View plans</a></li>
+    </ul>
+
+    </nav>
+  </header>
+
+  <section class="humanizing">
+      <div class="flex align-start reverse-mobile">
+        <div class="intro">
           <h1>Humanizing your insurance.</h1>
           <p>
             Get your life insurance coverage easier and faster. We blend our
             expertise and technology to help you find the plan that’s right for
             you. Ensure you and your loved ones are protected.
           </p>
-          <button>View plans</button>
+          <a href="" class="cta white">View plans</a>
         </div>
-        <div class="col-6">
-        <img src="/images/image-intro-desktop.jpg" alt="" srcset="">
+        <div>
+          <img src="/images/image-intro-desktop.jpg" alt="" srcset="">
         </div>
-      </section>
+      </div>
+  </section>
 
-      <section class="row">
-        <div class="row">
-        <h1>We're different</h1>
-        </div>
-        <div class="row">
-          <div class="col-4">
-            <img src="/images/icon-snappy-process.svg">
-            <h2>Snappy Process</h2>
-            <p>Our application process can be completed in minutes,
+  <section class="different">
+    <div class="container">
+      <h1>We're different</h1>
+
+      <div class="flex row">
+        <div class="item">
+          <img src="/images/icon-snappy-process.svg">
+          <h2>Snappy Process</h2>
+          <p>Our application process can be completed in minutes,
             not hours. Don’t get stuck filling in tedious forms.</p>
-          </div>
-          <div class="col-4">
-            <img src="/images/icon-affordable-prices.svg">
-            <h2>Affordable Prices</h2>
-            <p>We don’t want you worrying about high monthly
+        </div>
+        <div class="item">
+          <img src="/images/icon-affordable-prices.svg">
+          <h2>Affordable Prices</h2>
+          <p>We don’t want you worrying about high monthly
             costs. Our prices may be low, but we still offer the best coverage
             possible.</p>
-          </div>
-          <div class="col-4">
-            <img src="/images/icon-people-first.svg">
-            <h2>People First</h2>
-            <p>Our plans aren’t full of conditions and clauses to
+        </div>
+        <div class="item">
+          <img src="/images/icon-people-first.svg">
+          <h2>People First</h2>
+          <p>Our plans aren’t full of conditions and clauses to
             prevent payouts. We make sure you’re covered when you need it.</p>
-          </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
-      <section class="row">
-        <h1>Find out more about how we work</h1>
-        <button>How we work</button>
-      </section>
+  <section>
+    <div class="container">
+      <div class="flex banner">
+        <h2>Find out more about how we work</h2>
+        <a href="#" class="cta white">How we work</a>
+      </div>
+    </div>
+  </section>
 
-      <footer class="row">
-        <div class="footer-title">
-         <a href="#" class="nav-link"
-          ><img src="/images/logo.svg" alt="Logo"
-          /></a>   
-            <img src="/images/icon-facebook.svg" alt="" />
-            <img src="/images/icon-twitter.svg" alt="" />
-            <img src="/images/icon-pinterest.svg" alt="" />
-            <img src="/images/icon-instagram.svg" alt="" />        
+  <footer>
+    <div class="container">
+      <div class="footer-title flex">
+        <div class="footer-logo">
+          <a href="#" class="nav-link"><img src="/images/logo.svg" alt="Logo" /></a>
         </div>
-        <hr>
-        <div class="footer-menu">
+        <div class="social">
+          <img src="/images/icon-facebook.svg" alt="" />
+          <img src="/images/icon-twitter.svg" alt="" />
+          <img src="/images/icon-pinterest.svg" alt="" />
+          <img src="/images/icon-instagram.svg" alt="" />
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="footer-menu flex">
         <div class="col-3">
           <h4>Our company</h4>
-        <ul>
-          <li>How we work</li>
-          <li>Why insure</li>
-          <li>View plans</li>
-          <li>Reviews</li>
-        </ul> 
+          <ul>
+            <li>How we work</li>
+            <li>Why insure</li>
+            <li>View plans</li>
+            <li>Reviews</li>
+          </ul>
         </div>
         <div class="col-3">
           <h4>Help Me</h4>
-        <ul>
-          <li>FAQ</li>
-          <li>Terms of use</li>
-          <li>Privacy policy</li>
-          <li>Cookies</li>
-        </ul> 
+          <ul>
+            <li>FAQ</li>
+            <li>Terms of use</li>
+            <li>Privacy policy</li>
+            <li>Cookies</li>
+          </ul>
         </div>
         <div class="col-3">
           <h4>Contact</h4>
-        <ul>
-          <li>Sales</li>
-          <li>Support</li>
-          <li>Live chat</li>
-        </ul> 
+          <ul>
+            <li>Sales</li>
+            <li>Support</li>
+            <li>Live chat</li>
+          </ul>
         </div>
         <div class="col-3">
           <h4>Others</h4>
-        <ul>
-          <li>Careers</li>
-          <li>Press</li>
-          <li>Licences</li>
-        </ul> 
+          <ul>
+            <li>Careers</li>
+            <li>Press</li>
+            <li>Licences</li>
+          </ul>
         </div>
-      </footer>
+      </div>
     </div>
+  </footer>
   </div>
 
-
   <!-- Attribution -->
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="http://www.bensab.fr">bensab</a>.
+  </div>
 
-    <!-- JS Scripts-->
-  </body>
+  <!-- JS Scripts-->
+  <script src="/main.js"></script>
+</body>
+
 </html>
