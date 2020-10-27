@@ -171,12 +171,6 @@ nav>a:hover {
   line-height: 1;
 }
 
-.banner .cta {
-  color: white;
-  text-decoration: none;
-  border: white;
-}
-
 .cta {
   border: solid 2px hsl(256, 26%, 20%);
   padding: 8px 24px;
@@ -257,8 +251,15 @@ hr {
     display: none;
   }
 
+  .container-desktop {
+  max-width: 60rem;
+  width: 75%;
+  margin: auto;
+  }
+
   .humanizing {
     background: url(/images/bg-pattern-intro-right-desktop.svg) no-repeat top right;
+    background-color: hsl(256, 26%, 20%);
     padding: 80px 0; 
   }
 
@@ -266,6 +267,14 @@ hr {
     margin-bottom: -220px;
   }
 
+  .humanizing h1:before {
+    content: "";
+    margin-bottom: 40px;
+    display: block;
+    border-bottom: solid 1px white;
+    width: 160px;
+  }
+  
   .humanizing::before {
     content: "";
     background: url(/images/bg-pattern-intro-left-desktop.svg) no-repeat bottom left;
@@ -283,8 +292,6 @@ hr {
     border-bottom: solid 1px hsl(270, 9%, 17%);
     width: 160px;
   }
-
-
 
   .banner {
     background: url(/images/bg-pattern-how-we-work-desktop.svg) no-repeat top right;
@@ -353,7 +360,6 @@ hr {
   .desktop {
     display: none;
   }
-
 
   .humanizing {
     padding-bottom: 80px;
